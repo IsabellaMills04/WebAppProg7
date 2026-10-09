@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html> 
+	<head> 
+		<style>
+			.flex-container {
+				display: flex;  flex-direction:row;
+				background-color: red;
+		}
+
+		.flex-container > div {  /*div children of the flex container*/
+			background-color: #f1f1f1; 
+			margin: 10px;  padding: 20px;  font-size: 30px;
+		}
+
+		/* Responsive layout */
+		@media (max-width: 600px) { 
+			.flex-container{
+				flex-direction:column;
+				background-color: green;
+			}
+			}
+		</style>
+		<title>Flowers</title>
+	</head>
+
+
+
+	<body>
+		<h1>Isabella Mills finds avians</h1>
+		<p>Click on the locations to find the flowers, watch out for the poison ivy</p>
+		<p id="locations">Number of locations checked is zero.</p>
+		<p id="score">Score is zero.</p>
+		<p>Click for help</p>
+		<p id="help">Help report</p>
+
+		<div class="flex-container">
+			<div><img src="tree.jpg" alt="Tree" height="100px" width="100px"></div>
+			<div><img src="tree.jpg" alt="Tree" height="100px" width="100px"></div>
+			<div><img src="tree.jpg" alt="Tree" height="100px" width="100px"></div>
+			<div><img src="tree.jpg" alt="Tree" height="100px" width="100px"></div>
+			<div><img src="tree.jpg" alt="Tree" height="100px" width="100px"></div>
+			<div><img src="tree.jpg" alt="Tree" height="100px" width="100px"></div>
+		</div>
+		<div class="flex-container">
+			<div><img src="tree.jpg" alt="Tree" height="100px" width="100px"></div>
+			<div><img src="tree.jpg" alt="Tree" height="100px" width="100px"></div>
+			<div><img src="tree.jpg" alt="Tree" height="100px" width="100px"></div>
+			<div><img src="tree.jpg" alt="Tree" height="100px" width="100px"></div>
+			<div><img src="tree.jpg" alt="Tree" height="100px" width="100px"></div>
+			<div><img src="tree.jpg" alt="Tree" height="100px" width="100px"></div>
+		</div>
+		<div class="flex-container">
+			<div><img src="tree.jpg" alt="Tree" height="100px" width="100px"></div>
+			<div><img src="tree.jpg" alt="Tree" height="100px" width="100px"></div>
+			<div><img src="tree.jpg" alt="Tree" height="100px" width="100px"></div>
+			<div><img src="tree.jpg" alt="Tree" height="100px" width="100px"></div>
+			<div><img src="tree.jpg" alt="Tree" height="100px" width="100px"></div>
+			<div><img src="tree.jpg" alt="Tree" height="100px" width="100px"></div>
+		</div>
+		<div class="flex-container">
+			<div><img src="tree.jpg" alt="Tree" height="100px" width="100px"></div>
+			<div><img src="tree.jpg" alt="Tree" height="100px" width="100px"></div>
+			<div><img src="tree.jpg" alt="Tree" height="100px" width="100px"></div>
+			<div><img src="tree.jpg" alt="Tree" height="100px" width="100px"></div>
+			<div><img src="tree.jpg" alt="Tree" height="100px" width="100px"></div>
+			<div><img src="tree.jpg" alt="Tree" height="100px" width="100px"></div>
+		</div>
+		<div class="flex-container">
+			<div><img src="tree.jpg" alt="Tree" height="100px" width="100px"></div>
+			<div><img src="tree.jpg" alt="Tree" height="100px" width="100px"></div>
+			<div><img src="tree.jpg" alt="Tree" height="100px" width="100px"></div>
+			<div><img src="tree.jpg" alt="Tree" height="100px" width="100px"></div>
+			<div><img src="tree.jpg" alt="Tree" height="100px" width="100px"></div>
+			<div><img src="tree.jpg" alt="Tree" height="100px" width="100px"></div>
+		</div>
+		<div class="flex-container">
+			<div><img src="tree.jpg" alt="Tree" height="100px" width="100px"></div>
+			<div><img src="tree.jpg" alt="Tree" height="100px" width="100px"></div>
+			<div><img src="tree.jpg" alt="Tree" height="100px" width="100px"></div>
+			<div><img src="tree.jpg" alt="Tree" height="100px" width="100px"></div>
+			<div><img src="tree.jpg" alt="Tree" height="100px" width="100px"></div>
+			<div><img src="tree.jpg" alt="Tree" height="100px" width="100px"></div>
+		</div>
+	</body>
+	
+	<script>
+		function makeNewDiv(){
+			/* make the div and its text */
+			let element = document.createElement("div")
+			element.innerHTML = "an item after 3"
+			element.style.color = "orange"
+
+			/* add it to the container */
+			let container = document.getElementById('target')
+			container.appendChild(element)
+			
+		}
+	</script>
+</html>	
